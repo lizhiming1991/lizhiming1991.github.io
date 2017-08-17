@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div class="header_logo fl">
+    <img src="images/header_logo.png" alt="">
+  </div>
+  <div class="header_app fr">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+<div class="search">
+  <div class="search-text">
+    <input type="text" placeholder="请输入你想比较的商品">
+  </div>
+ 
+  <input type="button" value="搜索">
+</div>
+
+<div class="banner">
+  <a href="index.html">
+    <span>首页 ></span>
+  </a>
+  <a href="brandTitle.html">
+    <span>全部分类 ></span>
+  </a>
+</div>
+
+<div class="title">
+  <h5>平板电视哪个牌子好</h5>
+</div>
+
+<div class="table">
+  <ul>
+  </ul>
+</div>
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li data-id="{{v.brandId}}">
+    <div class="down fr">
+      <img src="images/arrow-right.svg" alt="">
+    </div>
+    <a href="productlist.html?category&{{v.categoryId}}">
+      <div class="left">
+        <div class="pic fl">
+          <div class="tip">{{i+1}}</div>
+        </div>
+        <div class="pic-right">
+          <p>{{v.brandName}}</p>
+          <span>{{v.brandInfo}}</span>
+        </div>
+      </div>
+    </a>
+    
+  </li>
+  {{/each}}
+</script>
+
+
+
+<div class="tit">
+  <h5>平板电视产品销量排行</h5>
+</div>
+
+<div class="play">
+  <ul>
+    
+  </ul>
+</div>
+<script type="text/html" id="plays">
+  {{each result v i}}
+  <li data-id="{{v.productId}}" data-img="{{v.productImg}}">
+    <div class="play-img">
+      <a href="bijia.html?productId&{{v.productId}}">
+        {{#v.productImg}}
+      </a>
+    </div>
+    <div class="play-right">
+        <p>{{v.productName}}</p>
+      <div class="price">
+        <em>¥</em>
+        {{v.productPrice}}
+      </div>
+      <div class="talk">
+        <i>{{v.productQuote}}</i>
+        <span>{{v.productCom}}</span>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+<div class="titb">
+  <h5>平板电视最新评论</h5>
+</div>
+
+<div class="plmb">
+  <ul>
+    
+  </ul>
+</div>
+<script type="text/html" id="tap">
+  {{each result v i}}
+  <li>
+    <div class="top">
+      <div class="pic fl">
+        <!--<img src="images/mnav.jpg" alt="">-->
+      </div>
+      <p>{{v.comFrom}}</p>
+    </div>
+    <div class="bottom">
+      <div class="cont">
+        <div class="name">
+          <div class="right fr">{{v.comTime}}</div>
+          <div class="left">{{v.comName}}</div>
+        </div>
+        <p>{{v.comContent}}</p>
+      </div>
+      <div class="xsj"></div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/brand.js"></script>
+</body>
+</html>

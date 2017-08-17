@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div><a href="index.html"></a></div>
+  <div class="header_logo">
+    <h3>白菜价-淘宝内部价</h3>
+  </div>
+  <div class="header_app">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+
+<div class="top-nav">
+  <div class="search">
+    <img src="images/search.svg" alt="">
+  </div>
+  <div class="naver">
+    <ul class="hot">
+  
+    </ul>
+  </div>
+ 
+</div>
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li class="" data-id="{{v.titleId}}">{{v.title}}</li>
+  {{/each}}
+</script>
+
+
+<ul class="ducte">
+ 
+</ul>
+<script type="text/html" id="ppt">
+  {{each result v i}}
+  <li class="product">
+    <div class="pic">
+      <a href="#">
+       {{#v.productImg}}
+      </a>
+    </div>
+    <div class="pic-right">
+      <p>{{#v.productName}}</p>
+      <div class="price">
+        <span>{{#v.productPrice}}</span>
+      </div>
+      <div class="box clearfix">
+        <div class="range fl">
+          <div class="son"></div>
+        </div>
+        <span class="fl abs">{{#v.productCouponRemain}}</span>
+      </div>
+      <div class="pick">
+        <div class="pick-left fl">
+          {{#v.productCoupon}}
+        </div>
+        <div class="pick-right fr">
+          {{#v.productHref}}
+        </div>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+<div class="upto">
+  
+</div>
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="lib/iscroll/iscroll.js"></script>
+<script src="js/baicaijia.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

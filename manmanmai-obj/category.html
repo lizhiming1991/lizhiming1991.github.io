@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <!--<div><a href="index.html"></a></div>-->
+  <div class="header_logo fl">
+    <img src="images/header_logo.png" alt="">
+  </div>
+  <div class="header_app fr">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+<div class="search">
+  <div class="search-text">
+    <input type="text" placeholder="请输入你想比较的商品">
+  </div>
+ 
+  <input type="button" value="搜索">
+</div>
+<div class="titles">
+  
+  
+</div>
+<script type="text/html" id="tits">
+  {{each result v i}}
+  <div class="tnt">
+    <div class="tit" data-id="{{v.titleId}}">
+      <h4>{{v.title}}</h4>
+      <div class="arr-bottom"></div>
+    </div>
+    <div class="box-list hide">
+      <ol class="clearfix b-list">
+        
+      </ol>
+    </div>
+  </div>
+  {{/each}}
+</script>
+
+<script type="text/html" id="lists">
+  {{each result v i}}
+  <li class="tav" data-id="{{v.categoryId}}" data-val="{{v.category}}">
+    <a href="productlist.html?categoryId&{{v.categoryId}}">{{v.category}}</a>
+  </li>
+  {{/each}}
+</script>
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/category.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

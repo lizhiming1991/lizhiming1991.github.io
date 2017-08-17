@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div><a href="moneyctrl.html"></a></div>
+  <div class="header_logo">
+    <h3>国内折扣</h3>
+  </div>
+  <div class="header_app">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+
+<div class="shop">
+  
+</div>
+<script type="text/html" id="shop">
+  {{each result v i}}
+  <div class="shopping">
+    <h2>{{v.productName}}</h2>
+    <div class="produces">
+      <span>{{v.productFrom}}</span>
+      <i>{{v.productTime}}</i>
+      <span>{{v.productTips}}</span> /
+      <span>{{v.productComCount}}</span>
+    </div>
+    <div class="content clearfix">
+      <div class="picture fr">
+        {{#v.productImgSm}}
+      </div>
+      <p>{{v.productInfo2}}</p>
+      <p>{{v.productPinkage}}</p>
+    </div>
+    <div class="big">
+      {{#v.productImg2}}
+    </div>
+    <div class="from">
+      {{#v.productCity}}
+    </div>
+    <div class="mai">
+      <a href="###">
+        <input type="button" value="前往购买">
+      </a>
+    </div>
+    <div class="erwema">
+      <img src="images/mmbweixin2.png" alt="">
+    </div>
+    <div class="pinglun">
+      <!--<div class="send">
+        <h6>发表评论</h6>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div class="butt">
+          <input type="button" value="发表评论">
+        </div>
+    
+      </div>-->
+      <div class="news">
+        <!--<h6>最新评论</h6>-->
+        <div class="cont">
+          {{#v.productComment}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  {{/each}}
+
+</script>
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/moneyproduct.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/brandTitle.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div class="header_logo fl">
+    <img src="images/header_logo.png" alt="">
+  </div>
+  <div class="header_app fr">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+<div class="search">
+  <div class="search-text">
+    <input type="text" placeholder="请输入你想比较的商品">
+  </div>
+ 
+  <input type="button" value="搜索">
+</div>
+
+<div class="banner">
+  <a href="index.html">
+    <span>首页 ></span>
+  </a>
+  <a href="#">
+    <span>全部分类 ></span>
+  </a>
+</div>
+
+<div class="title">
+  <h5>热门品牌排行</h5>
+</div>
+
+<div class="table">
+  <ul>
+   
+  </ul>
+</div>
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li data-id="{{v.brandTitleId}}">
+    <a href="brand.html?brandTitleId&{{v.brandTitleId}}">
+      <div class="down fr"></div>
+      <span>{{v.brandTitle}}</span>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+
+
+
+
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/brandTitle.js"></script>
+
+</body>
+</html>

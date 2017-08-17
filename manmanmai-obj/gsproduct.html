@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div><a href="index.html"></a></div>
+  <div class="header_logo">
+    <h3>凑单品</h3>
+  </div>
+  <div class="header_app">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+
+<div class="list">
+  <div class="lis1 list-shop fl">
+    <select name="" id="s1">
+      
+    </select>
+  </div>
+  <div class="lis1 list-area fl">
+    <select name="" id="s2">
+      
+    </select>
+  </div>
+  <div class="lis1 fl">
+    <select name="" id="s3">
+      <option value="">全部价格</option>
+    </select>
+  </div>
+  <div class="search">
+    <img src="images/search.svg" alt="">
+  </div>
+</div>
+<script type="text/html" id="shop">
+  {{each result v i}}
+  <option value="{{v.shopId}}" data-id="{{v.shopId}}">{{v.shopName}}</option>
+  {{/each}}
+</script>
+
+<script type="text/html" id="area">
+  {{each result v i}}
+  <option value="{{v.areaId}}" data-id="{{v.areaId}}">{{v.areaName}}</option>
+  {{/each}}
+</script>
+
+
+
+<div class="picture">
+  <ul class="prot">
+   
+  </ul>
+</div>
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li data-id="{{v.productId}}">
+    <a href="#">
+      <img src="{{v.productImg}}" alt="">
+    </a>
+    <p>{{v.productName}}</p>
+    <div class="price">
+      <input type="button" value="去凑单">
+      <span>{{v.productPrice}}</span>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/gsproduct.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

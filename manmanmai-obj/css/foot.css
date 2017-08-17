@@ -1,0 +1,49 @@
+@charset "utf-8";
+.foot {
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.foot .foot-return {
+  width: 100%;
+  height: 0.68rem;
+  border-top: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  margin-top: 0.5rem;
+  line-height: 0.64rem;
+}
+.foot .foot-return li {
+  float: left;
+  text-align: center;
+}
+.foot .foot-return li a {
+  font-size: 14px;
+}
+[data-dpr='2'] .foot .foot-return li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .foot .foot-return li a {
+  font-size: 42px;
+}
+.foot .foot-return li:nth-child(2) {
+  border-left: 0.02rem solid #ccc;
+  border-right: 0.02rem solid #ccc;
+}
+.foot .footer {
+  text-align: center;
+  margin: 0.35rem 0;
+}
+.foot .footer a {
+  font-size: 36px;
+}
+.foot .footer a:first-child {
+  color: red;
+}
+.foot .footer a:nth-child(2) {
+  color: #000;
+}
+.foot .footer a:last-child,
+.foot .footer span {
+  color: #666;
+  font-size: 36px;
+}

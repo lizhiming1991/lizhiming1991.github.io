@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/moneyctrl.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div><a href="index.html"></a></div>
+  <div class="header_logo">
+    <h3>省钱控-最新优惠</h3>
+  </div>
+  <div class="header_app">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+
+<div class="product">
+  <ul class="pci">
+   
+  </ul>
+</div>
+<script type="text/html" id="pcit">
+  {{each result v i}}
+  <li data-id="{{v.productId}}">
+    <div class="pict fl">
+      <a href="moneyproduct.html?productId&{{v.productId}}">
+       {{#v.productImgSm}}
+      </a>
+    </div>
+    <div class="pict-right">
+      <p>{{v.productName}}</p>
+      <span>{{v.productPinkage}}</span>
+      <div class="shop">
+        <span>{{v.productComCount}}</span>
+        <i>{{v.productFrom}}</i> |
+        <em> {{v.productTime}}</em>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+<div class="select">
+  <div class="pageup">
+    <input type="button" value="上一页">
+  </div>
+  <div class="sec" >
+    <select name="" id="mult">
+     
+    </select>
+  </div>
+  <div class="pagedown">
+    <input type="button" value="下一页">
+  </div>
+</div>
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/moneyctrl.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

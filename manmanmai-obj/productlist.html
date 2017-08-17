@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/productlist.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div class="header_logo fl">
+    <img src="images/header_logo.png" alt="">
+  </div>
+  <div class="header_app fr">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+<div class="search">
+  <div class="search-text">
+    <input type="text" placeholder="请输入你想比较的商品">
+  </div>
+ 
+  <input type="button" value="搜索">
+</div>
+<div class="top-banner">
+  
+  <div class="saxu">
+    <input type="button" value="筛选">
+  </div>
+</div>
+
+<script type="text/html" id="play">
+  <div class="ban">
+  <a href="index.html">首页 > </a>
+  <a href="category.html">全部分类 > </a>
+  {{each result v i}}
+    <a href="#" id="naver" data-name="{{v.categoryId}}">{{v.category}} > </a>
+  {{/each}}
+  </div>
+</script>
+<div class="play">
+  <ul>
+    
+  </ul>
+</div>
+
+<script type="text/html" id="plays">
+  {{each result v i}}
+  <li data-id="{{v.productId}}">
+    <div class="play-img">
+      <a href="bijia.html?productid&{{v.productId}}">
+        {{#v.productImg}}
+      </a>
+    </div>
+    <div class="play-right">
+      <a href="bijia.html?productid&{{v.productId}}">
+        <p>{{v.productName}}</p>
+      </a>
+      <div class="price">
+        <em>¥</em>
+        {{v.productPrice}}
+      </div>
+      <div class="talk">
+        <i>{{v.productQuote}}</i>
+        <span>{{v.productCom}}</span>
+      </div>
+    </div>
+  </li>
+  {{/each}}
+ 
+</script>
+
+<div class="select">
+  <div class="pageup">
+    <input type="button" value="上一页">
+  </div>
+  <div class="sec" >
+    <select name="" id="mult">
+      
+    </select>
+  </div>
+  <div class="pagedown">
+    <input type="button" value="下一页">
+  </div>
+</div>
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/productlist.js"></script>
+ 
+<script>
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div class="header_logo fl">
+    <img src="images/header_logo.png" alt="">
+  </div>
+  <div class="header_app fr">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+<div class="search">
+  <div class="search-text">
+    <input type="text" placeholder="请输入你想比较的商品">
+  </div>
+ 
+  <input type="button" value="搜索">
+</div>
+
+<div class="top-banner">
+ 
+  <div class="saxu">
+    <input type="button" value="筛选">
+  </div>
+</div>
+<script type="text/html" id="leshi">
+  <div class="ban">
+    {{each result v i}}
+    <a href="index.html">首页 ></a>
+    <a href="category.html">{{v.category}}></a>
+    
+    <a href="#">aaa ></a>
+    {{/each}}
+  </div>
+</script>
+<div class="bole">
+  
+</div>
+<script type="text/html" id="top-banner">
+  {{each result v i}}
+  <div class="produce" data-name="{{v.productName}}">
+    <div class="pict">
+      {{#v.productImg}}
+    </div>
+    <p>{{v.productName}}</p>
+    <ul class="clearfix">
+      <li class="pic1 w50">
+        <span>最 低 价</span>
+        <em>:</em>
+        <i>¥399.00</i>
+      </li>
+      <li class="pic1 w50">
+        <span>最低来自</span>
+        <em>:</em>
+        <i>京东商城</i>
+      </li>
+      <li class="pic1 w50">
+        <span>全网评论</span>
+        <em>:</em>
+        <i>15629条</i>
+      </li>
+      <li class="pic1 w50">
+        <span>优先评论</span>
+        <em>:</em>
+        <i>1339条</i>
+      </li>
+    </ul>
+  </div>
+  <section class="mtab">
+    <div class="mta1 w33">
+      <a href="#">比价购买</a>
+    </div>
+    <div class="mta2 w33">
+      <a href="#">产品参数</a>
+    </div>
+    <div class="mta3 w33">
+      <a href="#">评价(2323)</a>
+    </div>
+  </section>
+  <div class="power">
+    {{#v.bjShop}}
+    <!--<div class="bijia clearfix">
+      <div class="bj-left">
+        <img src="images/slogo.png" alt="">
+        <span>京东商城</span>
+      </div>
+      <div class="bj-right">
+        <i>&yen; 1999.00</i>
+        <input type="button" value="去购买">
+      </div>
+    </div>-->
+    <p>* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+  </div>
+  {{/each}}
+</script>
+
+
+<div class="friend">
+  <div class="titled">
+    <h6>网友评价</h6>
+  </div>
+  <div class="content">
+    <ul>
+    
+    </ul>
+  </div>
+</div>
+<script type="text/html" id="pingjia">
+{{each result v i}}
+<li data-id="{{v.comId}}">
+  <div class="head clearfix">
+    <span class="fl">{{v.comName}}</span>
+    <div class="rig fr">
+      <p>{{v.comTime}}</p>
+      <i>{{v.comFrom}}</i>
+    </div>
+  </div>
+  <div class="cont">
+    <p>{{v.comContent}}</p>
+  </div>
+</li>
+  
+{{/each}}
+</script>
+<div class="mores">
+  <div class="moss">
+    <a href="#">查看更多评价</a>
+  </div>
+</div>
+
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/bijia.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

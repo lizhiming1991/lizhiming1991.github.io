@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "top-foot2";
+
+.product{
+  width: 100%;
+  h5{
+    text-align: center;
+    height:66*@rem;
+    line-height:66*@rem;
+    font-size: 30*@rem;
+  }
+  ul{
+    width: 100%;
+    li{
+      padding: 12*@rem;
+      height:318*@rem;
+      .pic{
+        height:318*@rem;
+        float: left;
+        img{
+          width: 200*@rem;
+        }
+      }
+      .arr-right{
+        float:right;
+        margin-top: 10%;
+        img{
+          width: 40*@rem;
+        }
+      }
+      .pic-right{
+        margin:0 60*@rem 0 220*@rem ;
+        p{
+          font-size: 32*@rem;
+          margin-bottom: 15*@rem;
+        }
+        span{
+          font-size: 40*@rem;
+          font-weight: 700;
+        }
+        .date{
+          color:orange;
+          font-size: 32*@rem;
+          margin-top: 30*@rem;
+        }
+      }
+    }
+  }
+}
+
+//遮罩层
+.box{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,.3);
+  .pox{
+    width:400*@rem;
+    height:400*@rem;
+    margin: 450*@rem auto;
+    background-color: #fff;
+    position: relative;
+    .left,.right{
+      position: absolute;
+      width:60*@rem;
+      height:100*@rem;
+
+      top:50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,.7);
+      font-size: 60*@rem;
+      text-align: center;
+      line-height:100*@rem;
+      color: #fff;
+      cursor: pointer;
+    }
+    .cont{
+      width: 100%;
+      height: 100%;
+      position: relative;
+      li{
+        position: absolute;
+        top:0;
+        left:0;
+      }
+      img{
+        width:400*@rem;
+      }
+    }
+    .left{
+      left:-70*@rem;
+    }
+    .right{
+      right:-70*@rem;
+    }
+    .close{
+      cursor: pointer;
+      width:30*@rem;
+      height:30*@rem;
+      background: url( ../images/icon_bar.png
+      ) no-repeat -360*@rem  -30*@rem;
+      background-size: 440*@rem 264*@rem;
+      position: absolute;
+      top:-32*@rem;
+      right:0;
+    }
+
+  }
+}
