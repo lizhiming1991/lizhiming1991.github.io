@@ -1,0 +1,150 @@
+@charset "utf-8";
+@import "top-foot2";
+@col-1:#fc353a;
+@col-2:#ff5e5d;
+
+.top-nav{
+  width: 100%;
+  padding: 0 20*@rem;
+  height:78*@rem;
+  .search {
+    width:15%;
+    float: right;
+    height: 76*@rem;
+    text-align: center;
+    border-left: 2*@rem solid #ccc;
+    img {
+      width: 70*@rem;
+    }
+  }
+  .naver{
+    width: 80%;
+    overflow: hidden;
+  }
+  ul{
+    width:1500*@rem;
+    height:80*@rem;
+    li{
+      width:70*@rem;
+      height:80*@rem;
+
+      border-bottom: 4*@rem solid #fff;
+      line-height:76*@rem;
+      float: left;
+      font-size: 34*@rem;
+      margin-left:40*@rem;
+      cursor: pointer;
+    }
+    .col-red{
+      color:#d90000;
+      border-bottom: 4*@rem solid #d90000;
+    }
+  }
+}
+
+.ducte{
+  width: 100%;
+  padding: 20*@rem 20*@rem;
+
+  .product{
+    width: 100%;
+    overflow: hidden;
+  }
+  .pic{
+    width:260*@rem;
+    height:260*@rem;
+    float: left;
+    img{
+      width:260*@rem;
+    }
+  }
+  .pic-right{
+    overflow: hidden;
+
+    margin-left: 270*@rem;
+    height: 100%;
+    p{
+      font-size: 30*@rem;
+    }
+    .price{
+      margin-top: 15*@rem;
+      color:@col-1;
+      span{
+        font-size: 46*@rem;
+      }
+      del{
+        font-size: 30*@rem;
+        color:#bcbbbc;
+      }
+    }
+    .box{
+      margin-top: 15*@rem;
+      .range{
+        width: 164*@rem;
+        height:36*@rem;
+        border-radius: 5*@rem;
+        border: 2*@rem solid @col-1;
+        background-color:pink;
+        color: #fff;
+        font-size: 28*@rem;
+        .son{
+          width: 75%;
+          height:36*@rem;
+          border-radius: 5*@rem;
+          background-color: @col-1;
+        }
+      }
+      .abs{
+        margin-left: -100*@rem;
+        .bar{
+          i{
+            color:#fff;
+          }
+          b{
+            color: #000;
+            margin-left: 60*@rem;
+          }
+        }
+      }
+
+    }
+    .pick{
+      height:56*@rem;
+      margin-top: 20*@rem;
+      .pick-left{
+        padding: 0 5*@rem;
+        height:56*@rem;
+        border: 1*@rem dashed @col-1;
+        line-height:54*@rem;
+        text-align: center;
+        a{
+          color:@col-1;
+        }
+      }
+      .pick-right{
+        padding:  0 5*@rem;
+        height:56*@rem;
+        text-align: center;
+        line-height:54*@rem;
+        background-color: @col-1;
+        border-radius: 5*@rem;
+        a{
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+.upto{
+  background: url( ../images/top.jpg) no-repeat center;
+  width: 80*@rem;
+  height: 80*@rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom:30*@rem;
+  right:30*@rem;
+  background-color: #ccc;
+  z-index: 999;
+  background-size: 50*@rem 50*@rem;
+}

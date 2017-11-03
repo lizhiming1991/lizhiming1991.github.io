@@ -1,0 +1,286 @@
+@charset "utf-8";
+.top-header {
+  width: 100%;
+  background-color: #ff841d;
+  height: 1.16rem;
+}
+.top-header .header_logo {
+  cursor: pointer;
+  padding: 0.24rem 0 0 0.3rem;
+}
+.top-header .header_logo img {
+  height: 0.68rem;
+}
+.top-header .header_app {
+  cursor: pointer;
+  padding: 0.15rem 0.3rem 0 0;
+}
+.top-header .header_app img {
+  height: 0.85rem;
+}
+.search {
+  height: 1.02rem;
+  width: 100%;
+  padding: 0.2rem;
+  position: relative;
+}
+.search .search-text {
+  margin-right: 1.8rem;
+  height: 0.6rem;
+}
+.search .search-text input[type="text"] {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 0.6rem;
+  font-size: 16px;
+  border-radius: 0.35rem;
+  padding-left: 0.35rem;
+}
+[data-dpr='2'] .search .search-text input[type="text"] {
+  font-size: 32px;
+}
+[data-dpr="3"] .search .search-text input[type="text"] {
+  font-size: 48px;
+}
+.search input[type="button"] {
+  height: 0.6rem;
+  width: 1.6rem;
+  background-color: #ff841d;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  cursor: pointer;
+}
+.foot {
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.foot .foot-return {
+  width: 100%;
+  height: 0.68rem;
+  border-top: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  margin-top: 0.5rem;
+  line-height: 0.64rem;
+}
+.foot .foot-return li {
+  float: left;
+  text-align: center;
+}
+.foot .foot-return li a {
+  font-size: 14px;
+}
+[data-dpr='2'] .foot .foot-return li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .foot .foot-return li a {
+  font-size: 42px;
+}
+.foot .foot-return li:nth-child(2) {
+  border-left: 0.02rem solid #ccc;
+  border-right: 0.02rem solid #ccc;
+}
+.foot .footer {
+  text-align: center;
+  margin: 0.35rem 0;
+}
+.foot .footer a {
+  font-size: 36px;
+}
+.foot .footer a:first-child {
+  color: red;
+}
+.foot .footer a:nth-child(2) {
+  color: #000;
+}
+.foot .footer a:last-child,
+.foot .footer span {
+  color: #666;
+  font-size: 36px;
+}
+.top-banner {
+  width: 100%;
+  position: relative;
+  background-color: #5a5a5a;
+  padding-left: 0.1rem;
+}
+.top-banner .ban {
+  width: 100%;
+  height: 0.78rem;
+  border-top: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  line-height: 0.74rem;
+}
+.top-banner .ban a {
+  font-size: 16px;
+  color: #fff;
+}
+[data-dpr='2'] .top-banner .ban a {
+  font-size: 32px;
+}
+[data-dpr="3"] .top-banner .ban a {
+  font-size: 48px;
+}
+.top-banner .saxu {
+  position: absolute;
+  top: 0.1rem;
+  right: 0.15rem;
+}
+.top-banner .saxu input {
+  width: 1.24rem;
+  height: 0.56rem;
+  border-radius: 0.1rem;
+  box-shadow: 0 2px 2px 1px #999;
+}
+.produce {
+  width: 100%;
+  padding: 0.25rem;
+  overflow: hidden;
+}
+.produce .pict {
+  width: 3rem;
+  margin: 0 auto;
+}
+.produce .pict img {
+  height: 3rem;
+}
+.produce p {
+  font-size: 0.48rem;
+  color: #575757;
+}
+.produce ul {
+  width: 100%;
+}
+.produce ul li {
+  float: left;
+  margin-top: 0.15rem;
+}
+.produce ul li:nth-child(3),
+.produce ul li:nth-child(4) {
+  color: #999;
+}
+.mtab {
+  width: 100%;
+  height: 0.7rem;
+}
+.mtab div {
+  height: 0.7rem;
+  float: left;
+  text-align: center;
+  line-height: 0.7rem;
+}
+.mtab div a {
+  font-size: 0.42rem;
+  color: #fff;
+}
+.mtab .mta1 {
+  background-color: #FFBB02;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffa632), to(#ff9000));
+}
+.mtab .mta2 {
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+  border-left: 0.01rem solid #c14d00;
+  border-right: 0.01rem solid #c14d00;
+}
+.mtab .mta3 {
+  background-color: #ffbb00;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffd050), to(#ffbb00));
+}
+.power {
+  width: 100%;
+}
+.power .bijia .bj-left {
+  height: 0.88rem;
+  float: left;
+  line-height: 0.88rem;
+  padding-left: 0.1rem;
+}
+.power .bijia .bj-left img {
+  width: 0.4rem;
+  vertical-align: middle;
+  margin-top: -0.1rem;
+}
+.power .bijia .bj-left span {
+  font-size: 0.4rem;
+}
+.power .bijia .bj-right {
+  height: 0.88rem;
+  float: right;
+  line-height: 0.88rem;
+  padding-right: 0.05rem;
+}
+.power .bijia .bj-right i {
+  font-size: 0.4rem;
+  color: red;
+}
+.power .bijia .bj-right input {
+  font-size: 0.32rem;
+  background-color: #f50;
+  width: 1.12rem;
+  height: 0.48rem;
+  color: #fff;
+  border-radius: 0.05rem;
+}
+.power p {
+  width: 100%;
+  height: 1.16rem;
+  padding: 0.2rem;
+  font-size: 0.3rem;
+}
+.friend {
+  width: 100%;
+  border-top: 0.08rem solid #666;
+}
+.friend .titled {
+  background-color: #dbdbdb;
+  border-top: 0.02rem solid #fff;
+  height: 0.68rem;
+  text-align: center;
+  line-height: 0.66rem;
+  font-size: 0.42rem;
+}
+.friend .content {
+  width: 100%;
+  font-size: 0.3rem;
+  background-color: #fff;
+}
+.friend .content ul {
+  width: 100%;
+}
+.friend .content ul li {
+  border-bottom: 0.02rem solid #ccc;
+  padding: 0 0.2rem;
+  width: 100%;
+}
+.friend .content ul li .head {
+  height: 1rem;
+  padding-top: 0.2rem;
+}
+.friend .content ul li .rig p {
+  margin-bottom: 0.1rem;
+}
+.friend .content ul li .cont p {
+  font-size: 0.36rem;
+  margin-top: 0.3rem;
+  padding-bottom: 0.2rem;
+}
+.mores {
+  width: 100%;
+  height: 1.46rem;
+  padding: 0 0.2rem;
+  overflow: hidden;
+}
+.mores .moss {
+  margin: 0.42rem auto 0;
+  width: 7.1rem;
+  height: 0.62rem;
+  border: 0.01rem solid #999;
+  font-size: 0.42rem;
+  border-radius: 0.05rem;
+  box-shadow: 0 2px 1px 1px #ccc;
+  text-align: center;
+  background-color: #ececec;
+}

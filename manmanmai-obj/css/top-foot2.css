@@ -1,0 +1,80 @@
+@charset "utf-8";
+.top-header {
+  width: 100%;
+  background-color: #ff841d;
+  height: 1.16rem;
+  line-height: 1.16rem;
+  text-align: center;
+  position: relative;
+}
+.top-header h3 {
+  font-size: 0.42rem;
+  color: #fff;
+}
+.top-header .header_app {
+  cursor: pointer;
+  position: absolute;
+  top: 0.15rem;
+  right: 0.25rem;
+}
+.top-header .header_app img {
+  height: 0.85rem;
+}
+.top-header a {
+  float: left;
+  display: block;
+  width: 0.3rem;
+  height: 0.5rem;
+  background: url(../images/icon_bar.png) no-repeat -2.06rem -0.21rem;
+  background-size: 4.4rem 2.64rem;
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+}
+.foot {
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.foot .foot-return {
+  width: 100%;
+  height: 0.68rem;
+  border-top: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  margin-top: 0.5rem;
+  line-height: 0.64rem;
+}
+.foot .foot-return li {
+  float: left;
+  text-align: center;
+}
+.foot .foot-return li a {
+  font-size: 14px;
+}
+[data-dpr='2'] .foot .foot-return li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .foot .foot-return li a {
+  font-size: 42px;
+}
+.foot .foot-return li:nth-child(2) {
+  border-left: 0.02rem solid #ccc;
+  border-right: 0.02rem solid #ccc;
+}
+.foot .footer {
+  text-align: center;
+  margin: 0.35rem 0;
+}
+.foot .footer a {
+  font-size: 36px;
+}
+.foot .footer a:first-child {
+  color: red;
+}
+.foot .footer a:nth-child(2) {
+  color: #000;
+}
+.foot .footer a:last-child,
+.foot .footer span {
+  color: #666;
+  font-size: 36px;
+}

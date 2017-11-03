@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="lib/flexible/flexible.js"></script>
+  <script src="lib/flexible/flexible_css.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<body>
+<div class="top-header" id="return">
+  <div><a href="coupon.html"></a></div>
+  <div class="header_logo">
+    <h3>肯得基优惠券</h3>
+  </div>
+  <div class="header_app">
+    <img src="images/header_app.png" alt="">
+  </div>
+</div>
+
+<div class="product">
+  <h5>
+    --点餐前出示手机中的优惠券，即可享受优惠--
+  </h5>
+  <ul class="ppc">
+    
+  </ul>
+</div>
+<script type="text/html" id="tmp">
+  {{each result v i}}
+  <li data-id="{{v.couponProductId}}">
+    <div class="pic">
+      {{#v.couponProductImg}}
+    </div>
+    <div class="arr-right">
+      <a href="###">
+        <img src="images/more.png" alt="">
+      </a>
+    </div>
+    <div class="pic-right">
+      <p>{{v.couponProductName}}</p>
+      <span>{{v.couponProductPrice}}</span>
+      <div class="date">{{v.couponProductTime}}</div>
+    </div>
+  </li>
+  {{/each}}
+</script>
+
+
+
+
+<div class="box hide">
+  <div class="pox">
+    <div class="left"> < </div>
+    <div class="cont">
+      <ul class="loop">
+        
+      </ul>
+    </div>
+    <div class="right"> > </div>
+    <div class="close"></div>
+  </div>
+</div>
+<script type="text/html" id="loop">
+  {{each result v i}}
+  <li>
+    <a href="###">
+      {{#v.couponProductImg}}
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+
+
+
+
+
+<div class="foot">
+  <div class="foot-return">
+    <ul>
+      <li class="w33">
+        <a href="#">登录</a>
+      </li>
+      <li class="w33">
+        <a href="#">注册</a>
+      </li>
+      <li class="w33">
+        <a href="#return">
+          <img src="images/top.jpg" alt="">
+          <span>返回顶部</span>
+          </a>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <p>
+      <a href="#">手机APP下载</a>
+      <a href="#">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <span>m.manmanbuy.com</span>
+  </div>
+</div>
+
+<script src="lib/artTemplate/template-web.js"></script>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script src="js/couponproduct.js"></script>
+
+<script>
+ 
+</script>
+</body>
+</html>

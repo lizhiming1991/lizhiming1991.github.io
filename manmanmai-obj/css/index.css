@@ -1,0 +1,235 @@
+@charset "utf-8";
+.top-header {
+  width: 100%;
+  background-color: #ff841d;
+  height: 1.16rem;
+}
+.top-header .header_logo {
+  cursor: pointer;
+  padding: 0.24rem 0 0 0.3rem;
+}
+.top-header .header_logo img {
+  height: 0.68rem;
+}
+.top-header .header_app {
+  cursor: pointer;
+  padding: 0.15rem 0.3rem 0 0;
+}
+.top-header .header_app img {
+  height: 0.85rem;
+}
+.search {
+  height: 1.02rem;
+  width: 100%;
+  padding: 0.2rem;
+  position: relative;
+}
+.search .search-text {
+  margin-right: 1.8rem;
+  height: 0.6rem;
+}
+.search .search-text input[type="text"] {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 0.6rem;
+  font-size: 16px;
+  border-radius: 0.35rem;
+  padding-left: 0.35rem;
+}
+[data-dpr='2'] .search .search-text input[type="text"] {
+  font-size: 32px;
+}
+[data-dpr="3"] .search .search-text input[type="text"] {
+  font-size: 48px;
+}
+.search input[type="button"] {
+  height: 0.6rem;
+  width: 1.6rem;
+  background-color: #ff841d;
+  border-radius: 0.3rem;
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+  cursor: pointer;
+}
+.line {
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 0.2rem;
+}
+.produce {
+  width: 100%;
+  padding: 0.3rem;
+}
+.produce ul li {
+  text-align: center;
+  width: 25%;
+  float: left;
+  margin-top: 0.2rem;
+}
+.produce ul li img {
+  height: 1.4rem;
+}
+.produce ul li p {
+  color: #000;
+  margin-top: 0.1rem;
+}
+.introduce-title {
+  width: 100%;
+  height: 0.7rem;
+  background-color: #ff841d;
+  line-height: 0.7rem;
+}
+.introduce-title h5 {
+  font-size: 18px;
+  float: left;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+[data-dpr='2'] .introduce-title h5 {
+  font-size: 36px;
+}
+[data-dpr="3"] .introduce-title h5 {
+  font-size: 54px;
+}
+.introduce-title a {
+  display: block;
+  float: right;
+  margin-right: 0.2rem;
+}
+.introduce-title a img {
+  height: 0.4rem;
+  vertical-align: middle;
+}
+.introduce {
+  width: 100%;
+}
+.introduce li {
+  width: 100%;
+  height: 2.6rem;
+  border-bottom: 1px solid #ccc;
+  padding: 0.2rem;
+}
+.introduce li .img-nav {
+  text-align: center;
+  height: 2.6rem;
+  float: left;
+  line-height: 2.6rem;
+}
+.introduce li .img-nav img {
+  height: 2.2rem;
+}
+.introduce .int-right {
+  height: 2.6rem;
+  margin-left: 2.4rem;
+}
+.introduce .int-right i {
+  width: 100%;
+}
+.introduce .int-right > span {
+  color: #f10125;
+}
+.introduce .int-right .int-bottom {
+  width: 100%;
+  margin-top: 0.6rem;
+  color: #999;
+}
+.introduce .int-right .int-bottom .int-l {
+  float: left;
+}
+.introduce .int-right .int-bottom .int-r {
+  float: right;
+}
+.introduce .int-right .int-bottom .int-r img {
+  vertical-align: middle;
+}
+.more {
+  width: 100%;
+  margin-top: 0.2rem;
+  text-align: center;
+  padding: 0 0.2rem;
+}
+.more h4 {
+  width: 100%;
+  background-color: #fafafa;
+  height: 0.64rem;
+  border: 0.02rem solid #ccc;
+  border-radius: 0.1rem;
+  line-height: 0.6rem;
+}
+.foot {
+  width: 100%;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+.foot .foot-title {
+  margin-top: 0.2rem;
+  width: 100%;
+  height: 0.7rem;
+  background-color: #ff841d;
+  line-height: 0.7rem;
+}
+.foot .foot-title h5 {
+  font-size: 18px;
+  float: left;
+  color: #fff;
+  margin-left: 0.2rem;
+}
+[data-dpr='2'] .foot .foot-title h5 {
+  font-size: 36px;
+}
+[data-dpr="3"] .foot .foot-title h5 {
+  font-size: 54px;
+}
+.foot .foot-title a {
+  display: block;
+  float: right;
+  margin-right: 0.2rem;
+}
+.foot .foot-title a img {
+  height: 0.4rem;
+  vertical-align: middle;
+}
+.foot .foot-return {
+  width: 100%;
+  height: 0.68rem;
+  border-top: 0.02rem solid #ccc;
+  border-bottom: 0.02rem solid #ccc;
+  margin-top: 0.5rem;
+  line-height: 0.64rem;
+}
+.foot .foot-return li {
+  float: left;
+  text-align: center;
+}
+.foot .foot-return li a {
+  font-size: 14px;
+}
+[data-dpr='2'] .foot .foot-return li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .foot .foot-return li a {
+  font-size: 42px;
+}
+.foot .foot-return li:nth-child(2) {
+  border-left: 0.02rem solid #ccc;
+  border-right: 0.02rem solid #ccc;
+}
+.foot .footer {
+  text-align: center;
+  margin: 0.35rem 0;
+}
+.foot .footer a {
+  font-size: 36px;
+}
+.foot .footer a:first-child {
+  color: red;
+}
+.foot .footer a:nth-child(2) {
+  color: #000;
+}
+.foot .footer a:last-child,
+.foot .footer span {
+  color: #666;
+  font-size: 36px;
+}

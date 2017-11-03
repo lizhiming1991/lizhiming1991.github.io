@@ -1,0 +1,3 @@
+环境启动
+1.!Import文件下mongodb下mongostart.bat点击开启,不要关闭
+2.!Import文件下MMBApiServer下src下start.bat文件点击开启,不要关闭

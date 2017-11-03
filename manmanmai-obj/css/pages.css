@@ -1,0 +1,17 @@
+@charset "utf-8";
+.select {
+  width: 100%;
+  height: 0.92rem;
+  text-align: center;
+}
+.select div {
+  width: 33.33%;
+  float: left;
+}
+.select div input,
+.select div select {
+  width: 1.53rem;
+  height: 0.68rem;
+  cursor: pointer;
+  text-align: center;
+}
